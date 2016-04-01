@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="user sign up">
+		<meta name="author" content="Martin Pastore">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>BOOTCAMP GLOBANT</title>
+	</head>
+	<body>
+		<form id="signUp"> 
+			First Name <input type="text" id="firstname" required/></br>
+			Last Name <input type="text" id="lastnmae" required/></br>
+			E-mail <input type="text" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" required/></br>
+			Birthday <input type="date" id="birthday" min="1990-01-01" max="2016-04-01" required/></br>
+			Favourite Sport 
+			<select>
+			<option value="soccer">Soccer</option>
+			<option value="basketball">Basketball</option>
+			<option value="tennis">Tennis</option>
+			<option value="rugby">Rugby</option>
+			<option value="carrace">Car Race</option>
+			<option value="baseball">Baseball</option>	
+			</select></br>
+			About You</br> 
+			<textarea id="you" cols=20 rows=10 required/></textarea></br>
+			<input type="submit"><input type="reset">
+		</form>
+	</body>
+</html>

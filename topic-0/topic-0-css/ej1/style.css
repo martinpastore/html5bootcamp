@@ -1,0 +1,39 @@
+section {
+  border: 2px solid #CCC;
+  padding: 1em;
+  margin: 1em 0 1em 4em;
+  width: 800px;
+  position:absolute;
+  top:50px;
+  left:200px;
+}
+article{
+  position:top;
+}
+aside{
+  border:2px solid #CCC;
+  width: 150px;
+  padding:1em;
+  float:right;
+}
+footer{
+  text-align: center;
+  position:bottom;
+}
+header{
+  position:top;
+  text-align:center;
+  left: 50;
+
+}
+nav{
+ border:2px solid #CCC;
+  width: 150px;
+  padding:1em;
+  float:left;
+}
+.foot{
+  position:absolute;
+  top:300px;
+  left:450px;
+}
