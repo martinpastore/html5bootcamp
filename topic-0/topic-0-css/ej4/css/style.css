@@ -1,6 +1,12 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html *{
 	font-family: "";
-	background-color:#F2F2F2;
+	background-color: #F2F2F2;
 	width:100%;
 	height:100%;
 }
@@ -17,6 +23,7 @@ aside{
 	float:right;
 	font-size: 12px;
 	position:relative;
+	right:100px;
 }
 img{	
   display:inline-block;
@@ -42,27 +49,32 @@ p{
 .sidebar{
   border: 0px solid #CCC;
   padding: 1em;
-  margin: 1em 0 1em 4em;
+  margin: 1em 0 1em 0em;
   width:40%;
 }
 .header{
   border: 0px solid #CCC;
   padding: 1em;
-  margin: 1em 0 1em 4em;
+  margin: 1em 0 1em 2.5em;
   width:40%;
 }
 .info{
  display: none;
  position: absolute;
- bottom: 0;
+ top: 0;
  background: #FFF;
  width: 100%;
  height:20%;
- color: black;
  padding: 0px;
 opacity:0.4;
 margin-left: 21px;
-margin-bottom:22px;
+margin-top:21px;
+}
+.text{
+	color:#0000FF;
+	font-family: ;
+}
+li:hover{
 }
 li:hover .info{
 	display:block;
