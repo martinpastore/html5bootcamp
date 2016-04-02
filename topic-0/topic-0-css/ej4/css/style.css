@@ -24,20 +24,20 @@ img{
   height:100%;
   margin:20px;
   position:relative;
-  overflow: hidden;
+}
+ul{
+	list-style-type: none;
 }
 li{
 	position:relative;
 	display:inline-block;
 	width:30%;
 	height:100%;
-	list-style: none;
 	margin: 0;
 }
-.info{
-	width: 100%;
-	height:100%;
-	opacity:100%;
+p{
+	text-align: center;
+	font-family: ;
 }
 .sidebar{
   border: 0px solid #CCC;
@@ -55,11 +55,14 @@ li{
  display: none;
  position: absolute;
  bottom: 0;
- z-index: 10;
- background: black;
+ background: #FFF;
  width: 100%;
- color: white;
+ height:20%;
+ color: black;
  padding: 0px;
+opacity:0.4;
+margin-left: 21px;
+margin-bottom:22px;
 }
 li:hover .info{
 	display:block;
