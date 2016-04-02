@@ -8,18 +8,21 @@ section {
   border: 2px solid #CCC;
   padding: 1em;
   margin: 1em 0 1em 4em;
-  width: 800px;
+  width: 60%;
+  display:inline-block;
   position:absolute;
-  top:235px;
-  left:200px;
+  top:33%;
+  left:15%;
 }
 article{
   position:top;
 }
 aside{
   border:2px solid #CCC;
-  width: 150px;
+  width: 11%;
   padding:1em;
+  position:relative;
+  display:inline-block;
   float:right;
 }
 footer{
@@ -33,8 +36,10 @@ header{
 }
 nav{
  border:2px solid #CCC;
-  width: 150px;
+  width: 11%;
   padding:1em;
+  position:relative;
+  display:inline-block;
   float:left;
 }
 
@@ -51,6 +56,7 @@ nav{
 .header{
   font-size: 46px;
   background-color: #ff00ff;
+  
 }
 .content{
   font-size: 14px;
