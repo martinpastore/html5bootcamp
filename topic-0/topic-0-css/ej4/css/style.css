@@ -44,7 +44,6 @@ li{
 }
 p{
 	text-align: center;
-	font-family: ;
 }
 @font-face {
     font-family: "njnaruto";
@@ -73,7 +72,6 @@ p{
  opacity:0.4;
  margin-left: 21px;
  margin-top:21px;
-
 }
 .text{
 	color:#0000FF;
@@ -85,3 +83,10 @@ li:hover{
 li:hover .info{
 	display:block;
 }
+@media all and (max-width: 640){
+	body{
+		width: 100%;
+	}
+}
+
+
