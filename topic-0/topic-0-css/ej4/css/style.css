@@ -77,15 +77,131 @@ p{
 	color:#0000FF;
     font-family: njnaruto;
 }
-li:hover{ 
-    transition: all 3s ease-in-out;
-}
 li:hover .info{
 	display:block;
 }
-@media all and (max-width: 640){
-	body{
+@media screen and (min-width: 781px) and (max-width: 900px){
+	li{
 		width: 100%;
+	}
+	img{
+		width: 700px;
+	}
+	.info{
+		width:94%;
+	}
+	.sidebar{
+		width: 70%;
+	}
+	.header{
+		text-align: center;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 780px){
+	li{
+		width: 100%;
+	}
+	img{
+		width: 650px;
+	}
+	.info{
+		width:91%;
+	}
+	.sidebar{
+		width: 70%;
+	}
+	.header{
+		text-align: center;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 699px){
+	li{
+		width: 100%;
+	}
+	img{
+		width: 550px;
+	}
+	.info{
+		width:101%;
+	}
+	.sidebar{
+		width: 70%;
+	}
+	.header{
+		text-align: center;
+	}
+}
+@media screen and (min-width: 500px) and (max-width: 599px){
+	li{
+		width: 100%;
+	}
+	img{
+		width: 450px;
+	}
+	.info{
+		width:94%;
+	}
+	.sidebar{
+		width: 70%;
+	}
+	.header{
+		text-align: center;
+	}
+}
+@media screen and (min-width: 400px) and (max-width: 499px){
+	li{
+		width: 100%;
+	}
+	img{
+		width: 350px;
+	}
+	.info{
+		width:98%;
+	}
+	.sidebar{
+		width: 50%;
+	}
+	.header{
+		text-align: center;
+	}
+}
+@media screen and (min-width: 300px) and (max-width: 399px){
+	li{
+		width: 100%;
+	}
+	img{
+		width: 250px;
+	}
+	.info{
+		width:96%;
+	}
+	.sidebar{
+		width: 50%;
+		margin-top:20px;
+
+	}
+	.header{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 299px){
+	li{
+		width: 100%;
+	}
+	img{
+		width: 150px;
+	}
+	.info{
+		width:70%;
+	}
+	.sidebar{
+		width: 50%;
+		margin-top:30px;
+
+	}
+	.header{
+		text-align: center;
+		font-size:10px;
 	}
 }
 
