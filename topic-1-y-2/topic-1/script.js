@@ -21,28 +21,14 @@ function returnFunction(){
 	}
 	}
 }
-/*
+
 	function ajaxCall(){
-		var req = new XMLHttpRequest();
-		var url = document.getElementById("uri").value;
+		var config = new Object();
+		config.url = document.getElementById("uri").value;
 
-	req.onreadystatechange = showAjax;
-	$.ajax({
-		url: url;
-		type: "GET"
-		async: false;
-		});
+		var call = $.get(config.url, function(responseText){
+			alert("Data: " + responseText);
+			
+		})
+	}
 
-	function showAjax(){
-	if(req.readyState==4){
-		if(req.status==200){
-			document.write(req.responseText);
-		}else if (req.status==404){
-			document.write("404 NOT FOUND");
-		}else{
-			document.write("500 INTERNAL SERVER ERROR");
-		}
-	}
-	}
-}
-*/
