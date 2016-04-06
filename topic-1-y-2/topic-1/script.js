@@ -34,7 +34,7 @@ function returnFunction(){
 				Promise.resolve($("#ajax").html(responseText));
 			},
 			error: function(){
-				Promise.reject("ERROR NAME NOT RESOLVED");
+				Promise.reject($("#ajax").html("ERROR NAME NOT RESOLVED"));
 			}
 		})
 	})
