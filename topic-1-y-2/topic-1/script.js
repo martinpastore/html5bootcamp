@@ -12,7 +12,7 @@ function returnFunction(){
 	function showContain(){
 	if(req.readyState ==4){
 		if(req.status==200){
-			$("#hidden").html(req.responseText);
+			$("#ajax").html(req.responseText);
 		}else if (req.status==404){
 			document.write("404 NOT FOUND");
 		}else{
@@ -31,7 +31,7 @@ function returnFunction(){
 			type: 'GET',
 			dataType: 'html',
 			success: function(responseText){
-				$("#hidden").html(responseText);
+				$("#ajax").html(responseText);
 			}
 
 		});
