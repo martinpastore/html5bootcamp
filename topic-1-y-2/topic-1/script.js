@@ -26,9 +26,14 @@ function returnFunction(){
 		var config = new Object();
 		config.url = document.getElementById("uri").value;
 
-		var call = $.get(config.url, function(responseText){
-			alert("Data: " + responseText);
-			
-		})
+		var call = $.ajax({
+			url: config.url,
+			type: 'GET',
+			dataType: 'html',
+			success: function(responseText){
+				$("#hidden").html(responseText);
+			}
+
+		});
 	}
 
