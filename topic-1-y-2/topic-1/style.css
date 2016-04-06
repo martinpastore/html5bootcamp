@@ -4,6 +4,10 @@ section{
 }
 .boton{
 	background-color: blue;
-	font-color: white;
+	color: white;
 	border-style: none;
+}
+.error{
+	background-color: red;
+	color: white;
 }

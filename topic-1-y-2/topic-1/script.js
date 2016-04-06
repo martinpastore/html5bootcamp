@@ -5,7 +5,7 @@ function returnFunction(){
 	var req = new XMLHttpRequest();
 
 	req.onreadystatechange = showContain;
-	req.open('GET', 'http://api.icndb.com/jokes/random', true);
+	req.open('GET', 'http://api.icndb.co/jokes/random', true);
 	req.send(null)
 
 
@@ -14,9 +14,11 @@ function returnFunction(){
 		if(req.status==200){
 			$("#ajax").html(req.responseText);
 		}else if (req.status==404){
-			document.write("404 NOT FOUND");
+			$('section').addClass("error");
+			//document.write("404 NOT FOUND");
 		}else{
-			document.write("500 INTERNAL SERVER ERROR");
+			$('section').addClass("error");
+			//document.write("500 INTERNAL SERVER ERROR");			
 		}
 	}
 	}
@@ -34,6 +36,7 @@ function returnFunction(){
 				Promise.resolve($("#ajax").html(responseText));
 			},
 			error: function(){
+				$('div').addClass("error");
 				Promise.reject($("#ajax").html("ERROR NAME NOT RESOLVED"));
 			}
 		})
