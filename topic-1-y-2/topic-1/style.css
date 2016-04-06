@@ -1,0 +1,9 @@
+section{
+	text-align:center;
+	visibility:hidden;
+}
+.boton{
+	background-color: blue;
+	font-color: white;
+	border-style: none;
+}
