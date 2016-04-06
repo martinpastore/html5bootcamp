@@ -25,15 +25,24 @@ function returnFunction(){
 	function ajaxCall(){
 		var config = new Object();
 		config.url = document.getElementById("uri").value;
-
+		var promise = new Promise(function(resolve,reject){
 		var call = $.ajax({
 			url: config.url,
 			type: 'GET',
 			dataType: 'html',
 			success: function(responseText){
-				$("#ajax").html(responseText);
+				Promise.resolve($("#ajax").html(responseText));
+			},
+			error: function(){
+				Promise.reject("ERROR NAME NOT RESOLVED");
 			}
+		})
+	})
 
+		promise.then(function(result){
+			document.write(result);
+		}, function(error){
+			alert(error);
 		});
 	}
 
