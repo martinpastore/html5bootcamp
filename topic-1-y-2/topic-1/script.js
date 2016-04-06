@@ -5,7 +5,7 @@ function returnFunction(){
 	var req = new XMLHttpRequest();
 
 	req.onreadystatechange = showContain;
-	req.open('GET', 'http://api.icndb.co/jokes/random', true);
+	req.open('GET', 'http://api.icndb.com/jokes/random', true);
 	req.send(null)
 
 
