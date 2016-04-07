@@ -10,7 +10,10 @@ function ajaxCall(){
 			data: data,
 			dataType: 'html',
 			success: function(responseText){
-				alert(responseText);
+				document.write(responseText);
+			},
+			error: function(responseText){
+				document.write(responseText);
 			}
-		})
+		});
 	}
