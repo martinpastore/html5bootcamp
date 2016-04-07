@@ -1,6 +1,7 @@
-function showSection(){
-	document.getElementById("hidden").style.visibility = "visible";
-}
+$(document).ready(function() {
+  document.getElementById("hidden").style.visibility = "visible";
+});
+
 function returnFunction(){
 	var req = new XMLHttpRequest();
 
