@@ -2,7 +2,7 @@ $(document).ready(function() {
   document.getElementById("hidden").style.visibility = "visible";
 });
 
-function returnFunction(){
+$(document).ready(function(){
 	var req = new XMLHttpRequest();
 
 	req.onreadystatechange = showContain;
@@ -23,7 +23,7 @@ function returnFunction(){
 		}
 	}
 	}
-}
+});
 
 	function ajaxCall(){
 		var config = new Object();
