@@ -6,16 +6,22 @@ var Movie = (function(){
 
 Movie.prototype.play = function(){
 
-}
+};
 Movie.prototype.pause = function(){
 
-}
+};
 Movie.prototype.resume = function(){
 
-}
+};
+var EventEmmitter = (function(){
 
-m = new Movie();
-m.title = "Harry Potter";
+});
+EventEmmitter.prototype.on = function(){
+	
+};
+EventEmmitter.prototype.emit = function(){
 
-n = new Movie();
-n.title = "Star Wars"
+};
+EventEmmitter.prototype.off = function(){
+
+};
