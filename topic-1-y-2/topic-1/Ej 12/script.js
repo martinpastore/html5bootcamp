@@ -1,8 +1,12 @@
 function matrix(){
 	$("#txtName").empty();
 	$("#txtAge").empty();
-	var name = document.getElementById("txtName").value;
-	var age = document.getElementById("txtAge").value;
+
+	var matriz = new Array(2);
+	matriz[0] = document.getElementById("txtName").value;
+	matriz[1] = document.getElementById("txtAge").value;
+	//var name = 
+	//var age = document.getElementById("txtAge").value;
 
 	if(!document.getElementById("table")){
 		var table = document.createElement('table');
@@ -11,8 +15,8 @@ function matrix(){
 		table.appendChild(tr);
 		var td = document.createElement("td");
 		tr.appendChild(td);
-		var texto1 = document.createTextNode(name);
-		var texto2 = document.createTextNode(age);
+		var texto1 = document.createTextNode(matriz[0]);
+		var texto2 = document.createTextNode(matriz[1]);
 		td.appendChild(texto1);
 		var td1 = document.createElement("td");
 		tr.appendChild(td1);
@@ -22,8 +26,8 @@ function matrix(){
 		var tr = document.createElement("tr");
 		var td = document.createElement("td");
 		tr.appendChild(td);
-		var texto1 = document.createTextNode(name);
-		var texto2 = document.createTextNode(age);
+		var texto1 = document.createTextNode(matriz[0]);
+		var texto2 = document.createTextNode(matriz[1]);
 		td.appendChild(texto1);
 		var td1 = document.createElement("td");
 		tr.appendChild(td1);
