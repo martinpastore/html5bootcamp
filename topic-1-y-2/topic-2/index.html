@@ -12,28 +12,33 @@
 	<input type="button" id="showMov" value="Show Movies">
 	
 	<div id="cart" class="hide">
-		<input type="button" id="btnMovie1" value="Star Wars VII">
-		<input type="button" id="btnMovie2" value="Harry Potter 7">
-		<input type="button" id="btnMovie3" value="IronMan 3">
+		<input type="button" id="btnMovie1" value="Star Wars 7"/>
+		<input type="button" id="btnMovie2" value="Harry Potter 7"/>
+		<input type="button" id="btnMovie3" value="IronMan 3"/>
 	</div>
 	<div id="sw7" class="hide">
 		<input type="button" id="btnPlay" value="> Play" onClick="mov.play()"/>
 		<input type="button" id="btnPause" value="|| Pause" onClick="mov.pause()"/>
-		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/>
+		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/></br>
+		<input type="text" id="txtShare"><input type="button" id="btnShare" value="Share with friend" onClick="starWars.share()"/><input type="button" id="btnLike" value="Like" onClick="starWars.like()"/>
 	</div>
 	<div id="hp7" class="hide">
 		<input type="button" id="btnPlay" value="> Play" onClick="mov.play()"/>
 		<input type="button" id="btnPause" value="|| Pause" onClick="mov.pause()"/>
-		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/>
+		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/></br>
+		<input type="text" id="txtShare"><input type="button" id="btnShare" value="Share with friend" onClick="harryPotter.share()"/><input type="button" id="btnLike" value="Like" onClick="harryPotter.like()"/>
 	</div>
 	<div id="im3" class="hide">
 		<input type="button" id="btnPlay" value="> Play" onClick="mov.play()"/>
 		<input type="button" id="btnPause" value="|| Pause" onClick="mov.pause()"/>
-		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/>
+		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/></br>
+		<input type="text" id="txtShare"><input type="button" id="btnShare" value="Share with friend" onClick="ironman.share()"/><input type="button" id="btnLike" value="Like" onClick="ironman.like()"/>
 	</div>
 	<div>
 		<ul>
-			<li id="status">
+			<li id="status"/>
+			<li id="liShare"/>
+			<li id="liLike"/>
 		</ul>
 	</div>	
 </body>

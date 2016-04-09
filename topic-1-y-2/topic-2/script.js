@@ -42,6 +42,10 @@ var Movie = (function(title, year, duration){
 	this.duration = duration;
 });
 
+var starWars = new Movie('Star Wars VII', 2010, 120);
+var harryPotter = new Movie('Harry Potter 7', 2015, 125);
+var ironman = new Movie('IronMan 3', 2015, 132);
+
 EventEmmitter.prototype = new Movie();
 
 Movie.prototype.play = function(){
@@ -56,5 +60,20 @@ Movie.prototype.resume = function(){
 
 var mov = new EventEmmitter();
 
+//ej 5
+
+//ej 6
+var Social = {
+			share: function(friendName){
+				friendName = document.getElementById("txtShare").value;
+				$("#liShare").html("Share with " + friendName);
+			},
+			like: function(friendName){
+				friendName = document.getElementById("txtShare").value;
+				$("#liLike").html(friendName + " likes the Movie");
+			}
+}
+
+var soc = Object.assign(Movie.prototype, Social);
 
 
