@@ -43,8 +43,8 @@ var Movie = (function(title, year, duration){
 	this.act = [];
 });
 
-var starWars = new Movie('Star Wars VII', 2010, 120);
-var harryPotter = new Movie('Harry Potter 7', 2015, 125);
+var starWars = new Movie('Star Wars VII', 2016, 120);
+var harryPotter = new Movie('Harry Potter 7', 2013, 125);
 var ironman = new Movie('IronMan 3', 2015, 132);
 
 Movie.prototype.play = function(){
@@ -57,11 +57,25 @@ Movie.prototype.resume = function(){
 	$("#status").html("RESUME");
 };
 
+Movie.prototype.logger = function(movie, act){
+	if(movie != null){
+		console.log(movie);
+
+	}
+	if(act != null){
+		console.log(act);
+	}
+}
+
 EventEmmitter.prototype = new Movie();
 
 var mov = new EventEmmitter();
 
 //ej 5
+var logger = (function(){
+
+});
+
 
 //ej 6
 var Social = {
