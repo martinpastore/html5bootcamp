@@ -40,6 +40,7 @@ var Movie = (function(title, year, duration){
 	this.title = title;
 	this.year = year;
 	this.duration = duration;
+	this.act = [];
 });
 
 var starWars = new Movie('Star Wars VII', 2010, 120);
@@ -81,17 +82,15 @@ var Actor = (function(full_name, age){
 	this.age = age;
 });
 
-Movie.prototype = new Actor();
-
-Actor.prototype.addActor = function(full_name, age){
-	var act = new Actor(full_name, age);
-	console.log(act);
-}
-
 var act1 = new Actor("Scarlett Johansson", 32);
 var act2 = new Actor("Ashton Kutcher", 38);
 var act3 = new Actor("Emma Watson", 25);
 
-actor1 = new Movie();
+Movie.prototype.addActor = function(act){
+	this.act = act;
+	console.log(this.act);
+}
+
+
 
 
