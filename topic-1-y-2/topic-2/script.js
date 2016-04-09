@@ -57,27 +57,33 @@ Movie.prototype.resume = function(){
 	$("#status").html("RESUME");
 };
 
-Movie.prototype.logger = function(movie, act){
+var Logger = (function(){
+
+});
+
+Logger.prototype.log = function(movie, act){
 	if(movie != null){
 		console.log(movie);
-
 	}
 	if(act != null){
 		console.log(act);
 	}
 }
 
+var info = new Logger();
+
 EventEmmitter.prototype = new Movie();
 
 var mov = new EventEmmitter();
 
 //ej 5
-var logger = (function(){
+/*
+Movie.prototype.log = function(movie, act){
+		console.log(mov);
+};
+*/
 
-});
 
-
-//ej 6
 var Social = {
 			share: function(friendName){
 				friendName = document.getElementById("txtShare").value;
