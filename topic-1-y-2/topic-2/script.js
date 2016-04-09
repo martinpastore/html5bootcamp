@@ -46,8 +46,6 @@ var starWars = new Movie('Star Wars VII', 2010, 120);
 var harryPotter = new Movie('Harry Potter 7', 2015, 125);
 var ironman = new Movie('IronMan 3', 2015, 132);
 
-EventEmmitter.prototype = new Movie();
-
 Movie.prototype.play = function(){
 	$("#status").html("PLAY");
 };
@@ -57,6 +55,8 @@ Movie.prototype.pause = function(){
 Movie.prototype.resume = function(){
 	$("#status").html("RESUME");
 };
+
+EventEmmitter.prototype = new Movie();
 
 var mov = new EventEmmitter();
 
@@ -75,5 +75,21 @@ var Social = {
 }
 
 var soc = Object.assign(Movie.prototype, Social);
+
+var Actor = (function(full_name, age){
+	this.full_name = full_name;
+	this.age = age;
+});
+
+Actor.prototype.addActor = function(full_name, age){
+	var act = new Actor(full_name, age);
+}
+
+var act1 = new Actor("Scarlett Johansson", 32);
+var act2 = new Actor("Ashton Kutcher", 38);
+var act3 = new Actor("Emma Watson", 25);
+
+
+Movie.prototype = new Actor();
 
 
