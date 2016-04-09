@@ -10,19 +10,31 @@
 </head>
 <body>
 	<input type="button" id="showMov" value="Show Movies">
+	
 	<div id="cart" class="hide">
 		<input type="button" id="btnMovie1" value="Star Wars VII">
 		<input type="button" id="btnMovie2" value="Harry Potter 7">
 		<input type="button" id="btnMovie3" value="IronMan 3">
 	</div>
 	<div id="sw7" class="hide">
-		bla
+		<input type="button" id="btnPlay" value="> Play" onClick="mov.play()"/>
+		<input type="button" id="btnPause" value="|| Pause" onClick="mov.pause()"/>
+		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/>
 	</div>
 	<div id="hp7" class="hide">
-		bla1
+		<input type="button" id="btnPlay" value="> Play" onClick="mov.play()"/>
+		<input type="button" id="btnPause" value="|| Pause" onClick="mov.pause()"/>
+		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/>
 	</div>
 	<div id="im3" class="hide">
-		bla2
+		<input type="button" id="btnPlay" value="> Play" onClick="mov.play()"/>
+		<input type="button" id="btnPause" value="|| Pause" onClick="mov.pause()"/>
+		<input type="button" id="btnPlay" value="« Resume" onClick="mov.resume()"/>
 	</div>
+	<div>
+		<ul>
+			<li id="status">
+		</ul>
+	</div>	
 </body>
 </html>

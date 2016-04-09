@@ -1,20 +1,5 @@
-var Movie = (function(){
-	this.title;
-	this.year;
-	this.duration;
-});
-
-Movie.prototype.play = function(){
-
-};
-Movie.prototype.pause = function(){
-
-};
-Movie.prototype.resume = function(){
-
-};
-var EventEmmitter = (function(){
-/*fijense en la doc de trigger() on() live() off() y vean que basicamente les estan pidiendo que enmascaren esas funciones*/	
+var EventEmmitter = (function(movie){
+	movie = new Movie();
 });
 
 EventEmmitter.prototype.on = $(document).ready(function(){
@@ -51,5 +36,25 @@ EventEmmitter.prototype.off = $(document).ready(function(){
 	$("im3").off("click")
 /*off borra todos los listeners de los eventos que le pasas*/
 });
+var Movie = (function(title, year, duration){
+	this.title = title;
+	this.year = year;
+	this.duration = duration;
+});
+
+EventEmmitter.prototype = new Movie();
+
+Movie.prototype.play = function(){
+	$("#status").html("PLAY");
+};
+Movie.prototype.pause = function(){
+	$("#status").html("PAUSE");
+};
+Movie.prototype.resume = function(){
+	$("#status").html("RESUME");
+};
+
+var mov = new EventEmmitter();
+
 
 
