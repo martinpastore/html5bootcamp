@@ -75,6 +75,12 @@ $("#btnMovie3").click(function(){
   $("#btnPlay").click(function(){	
   		console.log(movie);	 
 	});
+  $("#btnPlay1").click(function(){
+		console.log(movie);
+  });
+  $("#btnPlay2").click(function(){
+		console.log(movie);
+  });
 });
 
 var info = new Logger();
