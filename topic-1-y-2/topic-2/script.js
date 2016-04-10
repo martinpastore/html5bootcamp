@@ -73,10 +73,8 @@ $("#btnMovie3").click(function(){
 });
 
   $("#btnPlay").click(function(){	
-	if(movie != null){
-		console.log(movie);
-	}
-  });
+  		console.log(movie);	 
+	});
 });
 
 var info = new Logger();
