@@ -61,14 +61,23 @@ var Logger = (function(){
 
 });
 
-Logger.prototype.log = function(movie, act){
+Logger.prototype.log = $(document).ready(function(){
+$("#btnMovie1").click(function(){
+	movie = starWars;
+});
+$("#btnMovie2").click(function(){
+	movie = harryPotter;
+});
+$("#btnMovie3").click(function(){
+	movie = ironman;
+});
+
+  $("#btnPlay").click(function(){	
 	if(movie != null){
 		console.log(movie);
 	}
-	if(act != null){
-		console.log(act);
-	}
-}
+  });
+});
 
 var info = new Logger();
 
