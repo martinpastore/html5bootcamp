@@ -55,7 +55,9 @@ img{
 	margin-top: 20px;
 }
 .stat{
-	margin-left: 600px;
+	text-align: center;
+	margin-right: 35px;
+	margin-left: 0px;
 	color: red;
 	font-size: 22px;
 	font-family: arial black;
