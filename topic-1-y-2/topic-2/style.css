@@ -1,6 +1,50 @@
+body{
+	background-color: gray;
+}
 .hide{
 	display : none;
 }
 ul{
 	list-style: none;
+}
+.btn{
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 0px;
+	margin-left: 600px;
+	background-color: blue;
+	color: white;
+}
+.btnMov{
+	margin-top: 10px;
+	margin-left: 232.5px;
+	padding: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 0px;
+	color: white;
+}
+.btnCtrl{
+	margin-left: 50px;
+	margin-top: 300px;
+	padding: 20px;
+	padding-left: 170px;
+	padding-right: 170px;
+	border: 0px;
+	color: white;
+}
+.btnSoc{
+	margin-left: 50px;
+	margin-top: 60px;
+	padding: 20px;
+	padding-left: 170px;
+	padding-right: 170px;
+	border: 0px;
+	color: white;
+}
+.txt{
+ 	padding: 20px;
+ 	font-size: 18px;
+ 	margin-left: 120px;
 }
