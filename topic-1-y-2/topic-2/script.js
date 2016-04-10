@@ -99,12 +99,32 @@ Movie.prototype.log = function(movie, act){
 
 var Social = {
 			share: function(friendName){
-				friendName = document.getElementById("txtShare").value;
+				document.getElementById("btnShare").addEventListener("click", function(){
+				friendName = $("#txtShare").val();
 				$("#liShare").html("Share with " + friendName);
+				});
+				document.getElementById("btnShare1").addEventListener("click", function(){
+				friendName = $("#txtShare1").val();
+				$("#liShare").html("Share with " + friendName);
+				});
+				document.getElementById("btnShare2").addEventListener("click", function(){
+				friendName = $("#txtShare2").val();
+				$("#liShare").html("Share with " + friendName);
+				});
 			},
 			like: function(friendName){
-				friendName = document.getElementById("txtShare").value;
-				$("#liLike").html(friendName + " likes the Movie");
+				document.getElementById("btnLike").addEventListener("click", function(){
+					friendName = document.getElementById("txtShare").value;
+					$("#liLike").html(friendName + " likes the Movie");
+				});
+				document.getElementById("btnLike1").addEventListener("click", function(){
+					friendName = document.getElementById("txtShare1").value;
+					$("#liLike").html(friendName + " likes the Movie");
+				});
+				document.getElementById("btnLike2").addEventListener("click", function(){
+					friendName = document.getElementById("txtShare2").value;
+					$("#liLike").html(friendName + " likes the Movie");
+				});	
 			}
 }
 
@@ -123,7 +143,3 @@ Movie.prototype.addActor = function(act){
 	this.act = act;
 	console.log(this.act);
 }
-
-
-
-
