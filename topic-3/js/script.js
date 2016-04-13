@@ -1,4 +1,4 @@
-var moviesApp = angular.module('moviesApp', []);
+var moviesApp = angular.module('moviesApp', ["ngResource"]);
 /*
 moviesApp.controller('MainCtrl', ['$scope', function($scope){
 	/*$scope.movie1 = {};
@@ -46,13 +46,12 @@ moviesApp.controller('MainCtrl', ['$scope', function($scope){
 }]);
 }*/
 
-moviesApp.controller('MainCtrl', ['$http', '$scope',  function($http){
+moviesApp.controller('MainCtrl', ['$http', '$scope',  function($http, $scope){
+			
 			$http.get("js/mov.json").success(function(data){
 				$scope.movie = data;
-				for (var i = 0; i < data.length; i++) {
-					$scope.name = data[i].name;	
-				};
 			});
+
 	}]);
 	//boton
 	/*moviesApp.directive('customButton', function(){
