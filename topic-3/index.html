@@ -1,4 +1,4 @@
-<html>
+<html ng-app="moviesApp">
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
     <script src="https:///ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>
@@ -9,26 +9,15 @@
 	<title></title>
 </head>
 <body>
-	<div ng-app="moviesApp">
     <div ng-controller="MainCtrl">
+    <div ng-controller="MoviesCtrl">
     <nav class="navigator">	
         <ul class="lMov">
-    	<li>
-           {{ Movies.name }}
+    	<li ng-repeat="details in movie.details">
+           {{ details.name }}
         </li>
     	</ul>
     </nav>
-    <aside class="sidebar">
-    <ul>
-     <li> 
-        Name: {{ Movies.name }} <br/>
-        Actor1: {{ Movies.actor1 }} <br/>
-        Actor2: {{ Movies.actor2 }} <br/>
-        Actor3: {{ Movies.actor3 }} <br/>
-        Premiere: {{ Movies.premiere }} <br/>
-     </li>
-    </ul>
-    </aside>
     <selector class="selector">
         <!--<a custom-button class="btn">Click Me</a>-->
     </selector>
