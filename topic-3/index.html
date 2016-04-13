@@ -1,6 +1,7 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="https:///ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>
 	<script src="js/script.js"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<meta charset="UTF-8">
@@ -11,14 +12,16 @@
 	<div ng-app="moviesApp">
     <div ng-controller="MainCtrl">
     <nav class="navigator">	
-        <ul class="lMov" ng-repeat="movies in movie">
-    	<li>{{ movies.name }}</li>
+        <ul class="lMov">
+    	<li  ng-repeat="movies in movie">
+           Name: {{ movies.name }}
+        </li>
     	</ul>
     </nav>
     <aside class="sidebar">
     <ul>
-     <li ng-repeat="movies in movie"> 
-        {{movies.actor1}}
+     <li ng-repeat="movies in datos"> 
+        Actor1: {{ movies.actor1 }}
      </li>
     </ul>
     </aside>
