@@ -1,4 +1,4 @@
-var moviesApp = angular.module('moviesApp', ["ngResource"], ["ngRoute"]);
+var moviesApp = angular.module('moviesApp', ["ngRoute"]);
 /*
 moviesApp.controller('MainCtrl', ['$scope', function($scope){
 	/*$scope.movie1 = {};
@@ -46,18 +46,27 @@ moviesApp.controller('MainCtrl', ['$scope', function($scope){
 }]);
 }*/
 
-moviesApp.controller('MainCtrl', function($http, $scope, dataResource){
-			
-			$http.get("js/mov.json").success(function(data){
-				$scope.movie = data;
-			});
-			$scope.datos = dataResource.get();
-	});
+moviesApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
+			$scope.Movies = {};
 
-moviesApp.factory("dataResource", function ($resource) {
-    return $resource("js/data.json", { get: { method: "GET", isArray: true }
-    });
-});
+			$scope.Movies.name = '';
+
+			$http({
+				method: 'GET',
+				url: 'js/mov.json'
+
+			})
+			.succes(function(data){
+				$scope.Movies.name = data.Movies.name;
+				$scope.Movies.actor1 = data.Movies.actor1;
+				$scope.Movies.actor1 = data.Movies.actor2;
+				$scope.Movies.actor1 = data.Movies.actor3;
+				$scope.Movies.premiere = data.Movies.premiere;
+			})
+			.error(function(data){
+				document.write("FAIL!");
+			});	
+	}]);
 	//boton
 	/*moviesApp.directive('customButton', function(){
 		return{

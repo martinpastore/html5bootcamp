@@ -13,15 +13,19 @@
     <div ng-controller="MainCtrl">
     <nav class="navigator">	
         <ul class="lMov">
-    	<li  ng-repeat="movies in movie">
-           Name: {{ movies.name }}
+    	<li>
+           Name: {{ Movies.name }}
         </li>
     	</ul>
     </nav>
     <aside class="sidebar">
     <ul>
-     <li ng-repeat="movies in datos"> 
-        Actor1: {{ movies.actor1 }}
+     <li> 
+        Name: {{ Movies.name }} <br/>
+        Actor1: {{ Movies.actor1 }} <br/>
+        Actor2: {{ Movies.actor2 }} <br/>
+        Actor3: {{ Movies.actor3 }} <br/>
+        Premiere: {{ Movies.premiere }} <br/>
      </li>
     </ul>
     </aside>
