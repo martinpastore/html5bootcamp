@@ -19,3 +19,10 @@ li{
 	border: 2px;
 	border-color: black;
 }
+.selector{
+	text-align: center;
+	font-size: 18px;
+}
+.btn{
+	font-size: 14px;
+}
