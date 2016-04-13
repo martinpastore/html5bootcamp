@@ -9,7 +9,6 @@
 	<title></title>
 </head>
 <body>
-    <div ng-controller="MainCtrl">
     <div ng-controller="MoviesCtrl">
     <nav class="navigator">	
         <ul class="lMov">
@@ -18,10 +17,11 @@
         </li>
     	</ul>
     </nav>
-    <selector class="selector">
-        <!--<a custom-button class="btn">Click Me</a>-->
-    </selector>
     </div>
-</div>
+    <selector class="selector">
+        <div ng-controller="MainCtrl"> 
+        </div>
+    </selector>
+
 </body>
 </html>

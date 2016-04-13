@@ -1,4 +1,4 @@
-var moviesApp = angular.module('moviesApp', ['ngRoute']);
+var moviesApp = angular.module('moviesApp', []);
 
 moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	$scope.movie = {};
@@ -61,7 +61,7 @@ moviesApp.controller('HungerCtrl', ['$scope' ,'$http', function($scope, $html){
 	};
 }]);
 
-moviesApp.config(['$routeProvider', function($routeProvider){
+moviesApp.config(MainCtrl, ['ngRoute', function($routeProvider){
 	$routeProvider
 	.when('/avengers', {
 		templateUrl: "view/avengers.html",
