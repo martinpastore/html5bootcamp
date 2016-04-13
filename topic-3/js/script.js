@@ -61,7 +61,7 @@ moviesApp.controller('HungerCtrl', ['$scope' ,'$http', function($scope, $html){
 	};
 }]);
 
-moviesApp.config('MainCtrl', function($routeProvider){
+moviesApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider
 	.when('/avengers', {
 		templateUrl: "view/avengers.html",
@@ -86,4 +86,4 @@ moviesApp.config('MainCtrl', function($routeProvider){
 	.otherwirse({
 		redirectTo: '/'
 	});
-});
+}]);
