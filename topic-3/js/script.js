@@ -1,4 +1,4 @@
-var moviesApp = angular.module('moviesApp', []);
+var moviesApp = angular.module('moviesApp', ['ngRoute']);
 
 moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	$scope.movie = {};
@@ -60,8 +60,8 @@ moviesApp.controller('HungerCtrl', ['$scope' ,'$http', function($scope, $html){
 		"premiere": "4 de noviembre de 2015"
 	};
 }]);
-
-moviesApp.config(MainCtrl, ['ngRoute', function($routeProvider){
+/*
+moviesApp.config(['$routeProvider', function($routeProvider){
 	$routeProvider
 	.when('/avengers', {
 		templateUrl: "view/avengers.html",
@@ -84,6 +84,6 @@ moviesApp.config(MainCtrl, ['ngRoute', function($routeProvider){
 		controller: 'HungerCtrl'
 	})
 	.otherwirse({
-		redirectTo: '/'
+		redirectTo: 'index.html'
 	});
-}]);
+}]);*/
