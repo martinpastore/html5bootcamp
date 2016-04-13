@@ -1,3 +1,21 @@
 ul{
 	list-style: none;
 }
+.sidebar{
+	float: right;
+}
+.navigator{
+	float:left;
+}
+.mov{
+	font-size: 20px;
+	color: red;
+}
+li{
+	font-family: arial;
+}
+.lMov{
+	font-size: 22px;
+	border: 2px;
+	border-color: black;
+}

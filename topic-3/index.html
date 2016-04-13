@@ -10,10 +10,54 @@
 <body>
 	<div ng-app="moviesApp">
     <div ng-controller="MainCtrl">
-    	<ul>
-    	<li>{{ movie1.details.name }}</li> 
-    	<li>{{ movie1.details.actors }}</li>
+    <nav class="navigator">	
+        <ul class="lMov">
+    	<li>{{ movie1.details.name }}</li>
+        <li>{{ movie2.details.name }}</li>
+        <li>{{ movie3.details.name }}</li>
+        <li>{{ movie4.details.name }}</li>
+        <li>{{ movie5.details.name }}</li>
     	</ul>
+    </nav>
+    <aside class="sidebar">
+        <ul>
+            <li class="mov">{{ movie1.details.name }}</li>
+            <li>{{ movie1.details.actor1 }}</li>
+            <li>{{ movie1.details.actor2 }}</li>
+            <li>{{ movie1.details.actor3 }}</li>
+            <li>{{ movie1.details.actor4 }}</li>
+            <li>{{ movie1.details.actor5 }}</li>
+            <li>{{ movie1.details.premiere }}</li>
+        </ul>
+        <ul>
+            <li class="mov">{{ movie2.details.name }}</li>
+            <li>{{ movie2.details.actor1 }}</li>
+            <li>{{ movie2.details.actor2 }}</li>
+            <li>{{ movie2.details.actor3 }}</li>
+            <li>{{ movie2.details.premiere }}</li>
+        </ul>
+        <ul>
+            <li class="mov">{{ movie3.details.name }}</li>
+            <li>{{ movie3.details.actor1 }}</li>
+            <li>{{ movie3.details.actor2 }}</li>
+            <li>{{ movie3.details.actor3 }}</li>
+            <li>{{ movie3.details.premiere }}</li>
+        </ul>
+        <ul>
+            <li class="mov">{{ movie4.details.name }}</li>
+            <li>{{ movie4.details.actor1 }}</li>
+            <li>{{ movie4.details.actor2 }}</li>
+            <li>{{ movie4.details.actor3 }}</li>
+            <li>{{ movie4.details.premiere }}</li>
+        </ul>
+        <ul>
+            <li class="mov">{{ movie5.details.name }}</li>
+            <li>{{ movie5.details.actor1 }}</li>
+            <li>{{ movie5.details.actor2 }}</li>
+            <li>{{ movie5.details.actor3 }}</li>
+            <li>{{ movie5.details.premiere }}</li>
+        </ul>
+    </aside>
     </div>
 </div>
 </body>
