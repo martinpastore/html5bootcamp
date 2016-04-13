@@ -56,15 +56,12 @@ moviesApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
 				url: 'js/mov.json'
 
 			})
-			.succes(function(data){
+			.success(function(data){
 				$scope.Movies.name = data.Movies.name;
 				$scope.Movies.actor1 = data.Movies.actor1;
 				$scope.Movies.actor1 = data.Movies.actor2;
 				$scope.Movies.actor1 = data.Movies.actor3;
 				$scope.Movies.premiere = data.Movies.premiere;
-			})
-			.error(function(data){
-				document.write("FAIL!");
 			});	
 	}]);
 	//boton
