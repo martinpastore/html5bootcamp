@@ -1,4 +1,4 @@
-var moviesApp = angular.module('moviesApp', ["ngRoute"]);
+var moviesApp = angular.module('moviesApp', ['ngRoute']);
 
 moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	$scope.movie = {};
@@ -55,7 +55,6 @@ moviesApp.controller('HungerCtrl', ['$scope' ,'$http', function($scope, $html){
 		"premiere": "4 de noviembre de 2015"
 	};
 }]);
-
 moviesApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
 			$scope.Movies = {};
 
@@ -74,7 +73,6 @@ moviesApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
 				$scope.movie.premiere = data.movie.premiere;
 			});	
 	}]);
-
 moviesApp.config('MainCtrl', ['ngRoute', function($routeProvider){
 	$routeProvider
 	.when('/', {
