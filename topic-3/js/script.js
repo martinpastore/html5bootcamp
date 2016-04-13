@@ -16,6 +16,7 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 }]);
 
 moviesApp.controller('AvenCtrl', ['$scope' ,'$http', function($scope, $html){
+	$scope.details= {};
 	$scope.details= {
 		"actor1": "Robert Downey Jr.",
 		"actor2": "Chris Evans",
@@ -24,6 +25,7 @@ moviesApp.controller('AvenCtrl', ['$scope' ,'$http', function($scope, $html){
 	};
 }]);
 moviesApp.controller('StarCtrl', ['$scope' ,'$http', function($scope, $html){
+	$scope.details= {};
 	$scope.details= {
 		"actor1": "Mark Hamill",
 		"actor2": "Adam Driver",
@@ -32,6 +34,7 @@ moviesApp.controller('StarCtrl', ['$scope' ,'$http', function($scope, $html){
 	};
 }]);
 moviesApp.controller('HarryCtrl', ['$scope' ,'$http', function($scope, $html){
+	$scope.details= {};
 	$scope.details= {
 		"actor1": "Daniel Radcliffe",
 		"actor2": "Emma Watson",
@@ -40,6 +43,7 @@ moviesApp.controller('HarryCtrl', ['$scope' ,'$http', function($scope, $html){
 	};
 }]);
 moviesApp.controller('FastCtrl', ['$scope' ,'$http', function($scope, $html){
+	$scope.details= {};
 	$scope.details= {
 		"actor1": "Paul Walker",
 		"actor2": "Vin Diesel",
@@ -48,6 +52,7 @@ moviesApp.controller('FastCtrl', ['$scope' ,'$http', function($scope, $html){
 	};
 }]);
 moviesApp.controller('HungerCtrl', ['$scope' ,'$http', function($scope, $html){
+	$scope.details= {};
 	$scope.details= {
 		"actor1": "Jennifer Lawrence",
 		"actor2": "Josh Hutcherson",
