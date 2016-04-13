@@ -1,4 +1,4 @@
-var moviesApp = angular.module('moviesApp', ['ngRoute']);
+var moviesApp = angular.module('moviesApp', []);
 
 moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	$scope.movie = {};
@@ -55,25 +55,8 @@ moviesApp.controller('HungerCtrl', ['$scope' ,'$http', function($scope, $html){
 		"premiere": "4 de noviembre de 2015"
 	};
 }]);
-moviesApp.controller('MainCtrl', ['$scope', '$http', function($scope, $http){
-			$scope.Movies = {};
 
-			$scope.Movies.name = '';
-
-			$http({
-				method: 'GET',
-				url: ''
-
-			})
-			.success(function(data){
-				$scope.movie.name = data.movie.name;
-				$scope.movie.actor1 = data.movie.actor1;
-				$scope.movie.actor2 = data.movie.actor2;
-				$scope.movie.actor3 = data.movie.actor3;
-				$scope.movie.premiere = data.movie.premiere;
-			});	
-	}]);
-moviesApp.config('MainCtrl', ['ngRoute', function($routeProvider){
+moviesApp.config('MainCtrl',['ngRoute', '$routeProvider', function($routeProvider){
 	$routeProvider
 	.when('/', {
 		templateUrl: "view/avengers.html",
