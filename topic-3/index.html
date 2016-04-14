@@ -1,23 +1,31 @@
 <html ng-app="moviesApp">
 <head>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular-route.js"></script>
-	<script src="js/script.js"></script>
-	<link href="css/style.css" rel="stylesheet">
-	<meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="css/style.css"></script>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+    <title></title>
 </head>
 <body>
     <div ng-controller="MoviesCtrl">
-    <nav class="navigator">	
+    <nav class="navigator"> 
         <ul class="lMov">
-    	<li ng-repeat="mov in movie.name">
-           {{ mov.name }}
+        <li ng-repeat="mov in movie.details">
+          <input type="button" value="{{ mov.name }}" ng-click></a>
         </li>
-    	</ul>
+        </ul>
     </nav>
     </div>
-    <div ng-view></div>
+    <div ng-controller="MoviesCtrl">
+        <ul>
+        <li ng-repeat="mov in movie.details">
+           {{ mov.actor1 }} <br/>
+           {{ mov.actor2 }} <br/>
+           {{ mov.actor3 }} <br/>
+           {{ mov.premiere }} <br/>
+        </li>
+        </ul>
+    </div>
 </body>
 </html>
