@@ -13,12 +13,15 @@
     <nav class="navigator"> 
         <ul class="lMov">
         <li ng-repeat="mov in movie.details">
-          <input type="button" value="{{ mov.name }}" ng-click="ind($index)">
+          <input type="button" value="{{ mov.name }}" ng-click="show($index)" id="show">
         </li>
         </ul>
     </nav>
-        <dir>
-       </dir>
+    <ul>
+        <li>
+        {{greeting}}
+       </li>
+   </ul>
     </div>
 </body>
 </html>

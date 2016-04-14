@@ -1,4 +1,4 @@
-
+var ind;
 var moviesApp = angular.module('moviesApp', []);
 
 moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
@@ -35,14 +35,12 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 		"premiere": "4 de noviembre de 2015"
 	}];
 
-	$scope.ind = function(index){
-		console.log($scope.movie.details[index]);
-		return index;
-		}
-	
+	$scope.show = function(index){
+	   $scope.greeting = $scope.movie.details[index];
+	}
+
 }]);
-
-
+/*
 	moviesApp.directive('dir', function(){
 	return{
 			restric: 'E',
@@ -52,10 +50,11 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 			           '{{ mov.actor3 }} <br/>'+
 			           '{{ mov.premiere }} <br/>'+
 			       	   '</li>',
-			 link: function($scope, $index){
-			       	  	$scope.movie.details = $scope.movie.details[$index];
-			       	 }
+			controller: ['$scope', function($scope){
+				$('#show').click(function(index){
+					scope.movie.details = $scope.movie.details[index]
+				});
+			}],       	     
 		};
 });			
-
-//
+*/
