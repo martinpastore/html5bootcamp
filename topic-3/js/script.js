@@ -37,6 +37,20 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 
 	$scope.showDetails = function(index){
 		$scope.movie.details[index];
+		console.log($scope.movie.details[index]);
 	};
+
 }]);
 
+moviesApp.directive('dirShow', function(){
+	return{
+			restric: 'A',
+			template: '<li ng-repeat="mov in movie.details">'+
+			'{{ mov.actor1 }} <br/>'+
+           '{{ mov.actor2 }} <br/>'+
+          '{{ mov.actor3 }} <br/>'+
+           '{{ mov.premiere }} <br/>'+
+       '</li>'
+	}
+	scope.movie.details = $scope.movie.details[index];
+});
