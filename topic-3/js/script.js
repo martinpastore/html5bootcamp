@@ -35,8 +35,8 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 		"premiere": "4 de noviembre de 2015"
 	}];
 
-	$scope.show = function(index){
-	   $scope.greeting = $scope.movie.details[index];
+	$scope.show = function(index){ 
+	   $scope.greeting = $scope.movie.details[index].name + " - " + $scope.movie.details[index].actor1 + " - " + $scope.movie.details[index].actor2 + " - " + $scope.movie.details[index].actor3 + " - " + $scope.movie.details[index].premiere;
 	}
 
 }]);
