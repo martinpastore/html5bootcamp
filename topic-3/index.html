@@ -12,7 +12,7 @@
     <nav class="navigator"> 
         <ul class="lMov">
         <li ng-repeat="mov in movie.details">
-          <input type="button" value="{{ mov.name }}" ng-click></a>
+          <input type="button" value="{{ mov.name }}" ng-click="showDetails($index)"></a>
         </li>
         </ul>
     </nav>
@@ -20,6 +20,7 @@
     <div ng-controller="MoviesCtrl">
         <ul>
         <li ng-repeat="mov in movie.details">
+        <a ng-class="{ textClass: $index == sdetails }">
            {{ mov.actor1 }} <br/>
            {{ mov.actor2 }} <br/>
            {{ mov.actor3 }} <br/>
