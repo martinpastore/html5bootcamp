@@ -36,7 +36,7 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	}];
 
 	$scope.showDetails = function(index){
-		console.log($scope.movie.details[index]);
+		$scope.movie.details[index];
 	};
 }]);
 
