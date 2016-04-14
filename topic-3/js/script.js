@@ -34,24 +34,28 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 		"actor3": "Liam Hemsworth",
 		"premiere": "4 de noviembre de 2015"
 	}];
-		$scope.showDetails = function(index){
-				$scope.movie.details[index];
-				console.log($scope.movie.details[index]);
-				};
 
+	$scope.ind = function(index){
+		console.log($scope.movie.details[index]);
+		return index;
+		}
+	
 }]);
 
-moviesApp.directive('dirShow', function(){
+
+	moviesApp.directive('dir', function(){
 	return{
-			restric: 'A',
+			restric: 'E',
 			template: '<li ng-repeat="mov in movie.details">'+
 					   '{{ mov.actor1 }} <br/>'+
 			           '{{ mov.actor2 }} <br/>'+
 			           '{{ mov.actor3 }} <br/>'+
 			           '{{ mov.premiere }} <br/>'+
 			       	   '</li>',
-	        link: function(scope, index){
-	        	scope.movie.details = $scope.movie.details[index];
-	        }
+			 link: function($scope, $index){
+			       	  	$scope.movie.details = $scope.movie.details[$index];
+			       	 }
 		};
-});
+});			
+
+//
