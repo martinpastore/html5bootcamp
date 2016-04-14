@@ -2,7 +2,7 @@
 <head>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.29/angular.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="css/style.css"></script>
+    <link href="css\style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
@@ -19,8 +19,7 @@
     </div>
     <div ng-controller="MoviesCtrl">
         <ul>
-        <li ng-repeat="mov in movie.details">
-        <a ng-class="{ textClass: $index == sdetails }">
+        <li ng-repeat="mov in movie.details[$index]">
            {{ mov.actor1 }} <br/>
            {{ mov.actor2 }} <br/>
            {{ mov.actor3 }} <br/>

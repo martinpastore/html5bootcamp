@@ -34,9 +34,9 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 		"actor3": "Liam Hemsworth",
 		"premiere": "4 de noviembre de 2015"
 	}];
-	$scope.sdetails = 0;
+
 	$scope.showDetails = function(index){
-	$scope.sdetails = index;
+		console.log($scope.movie.details[index]);
 	};
 }]);
 

@@ -27,5 +27,8 @@ li{
 	font-size: 14px;
 }
 .textClass{
-	visibility: visible;
+	visibility: hidden;
+}
+.div{
+	visibility: hidden;
 }
