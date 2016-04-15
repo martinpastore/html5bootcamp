@@ -37,6 +37,11 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 
 	$scope.show = function(index){ 
 	   $scope.greeting = $scope.movie.details[index].name + " - " + $scope.movie.details[index].actor1 + " - " + $scope.movie.details[index].actor2 + " - " + $scope.movie.details[index].actor3 + " - " + $scope.movie.details[index].premiere;
+		document.getElementById("txtName").value = $scope.movie.details[index].name;
+		document.getElementById("txtActor1").value = $scope.movie.details[index].actor1;
+		document.getElementById("txtActor2").value = $scope.movie.details[index].actor2;
+		document.getElementById("txtActor3").value = $scope.movie.details[index].actor3;
+		document.getElementById("txtPremiere").value = $scope.movie.details[index].premiere;	 
 	}
 	$scope.delete = function(index){
 		var del = confirm('Delete movie?');
@@ -61,6 +66,16 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 		};	
 	}
 
+	$scope.edit = function(index){
+		$scope.movie.details = [{
+			"name" : document.getElementById("txtName").value,
+			"actor1" : document.getElementById("txtActor1").value,
+			"actor2" : document.getElementById("txtActor2").value,
+			"actor3" : document.getElementById("txtActor3").value,
+			"premiere" : document.getElementById("txtPremiere").value
+		}];
+		$scope.movie.details[index].push($scope.movie.details);
+	}
 }]);
 /*
 	moviesApp.directive('dir', function(){
