@@ -60,7 +60,7 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	}
 
 	$scope.edit = function(index){
-		$scope.movie.details[index].push({
+		$scope.movie.details.push({
 			"name" : document.getElementById("txtName").value,
 			"actor1" : document.getElementById("txtActor1").value,
 			"actor2" : document.getElementById("txtActor2").value,
