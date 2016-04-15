@@ -60,10 +60,14 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	}
 
 	$scope.edit = function(index){
+		var ed = confirm("Edit Movie?");
+		if(ed){
 			$scope.movie.details[index].name = document.getElementById("txtName").value;
 			$scope.movie.details[index].actor1 = document.getElementById("txtActor1").value;
 			$scope.movie.details[index].actor2 = document.getElementById("txtActor2").value;
 			$scope.movie.details[index].actor3 = document.getElementById("txtActor3").value;
 			$scope.movie.details[index].premiere = document.getElementById("txtPremiere").value;
+			$scope.greeting = "";
+		}
 	}
 }]);
