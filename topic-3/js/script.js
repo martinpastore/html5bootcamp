@@ -60,16 +60,10 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	}
 
 	$scope.edit = function(index){
-		$scope.movie.details.push({
-			"name" : document.getElementById("txtName").value,
-			"actor1" : document.getElementById("txtActor1").value,
-			"actor2" : document.getElementById("txtActor2").value,
-			"actor3" : document.getElementById("txtActor3").value,
-			"premiere" : document.getElementById("txtPremiere").value
-		});/*
-		for (var i = 0; i < $scope.movie.details.length; i++) {
-			if($scope.movie.details[i] == $scope.movie.details[index]){
-				$scope.movie.details.push($scope.movie.details);
-			}*/
+			$scope.movie.details[index].name = document.getElementById("txtName").value;
+			$scope.movie.details[index].actor1 = document.getElementById("txtActor1").value;
+			$scope.movie.details[index].actor2 = document.getElementById("txtActor2").value;
+			$scope.movie.details[index].actor3 = document.getElementById("txtActor3").value;
+			$scope.movie.details[index].premiere = document.getElementById("txtPremiere").value;
 	}
 }]);
