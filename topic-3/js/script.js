@@ -47,7 +47,6 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 		var del = confirm('Delete movie?');
 		if(del){
 			$scope.movie.details.splice(index, 1);
-			console.log($scope.movie.details[index]);
 			$scope.greeting = "";
 		}
 	}
@@ -64,6 +63,7 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 				$scope.movie.details.push($scope.movie.details);
 			}
 		};	
+		console.log($scope.movie.details);
 	}
 
 	$scope.edit = function(index){
