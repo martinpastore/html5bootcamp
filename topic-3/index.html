@@ -12,7 +12,7 @@
     <div ng-controller="MoviesCtrl">
     <nav class="navigator"> 
         <ul class="lMov">
-        <li ng-repeat="mov in movie.details">
+        <li ng-repeat="mov in movie.details track by $index">
           <input type="button" value="{{ mov.name }}" ng-click="show($index)" class="btn">
         </li>
         </ul>
