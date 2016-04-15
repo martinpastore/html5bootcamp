@@ -1,4 +1,3 @@
-var ind;
 var moviesApp = angular.module('moviesApp', []);
 
 moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
