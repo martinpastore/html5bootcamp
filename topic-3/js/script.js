@@ -38,7 +38,24 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 	$scope.show = function(index){ 
 	   $scope.greeting = $scope.movie.details[index].name + " - " + $scope.movie.details[index].actor1 + " - " + $scope.movie.details[index].actor2 + " - " + $scope.movie.details[index].actor3 + " - " + $scope.movie.details[index].premiere;
 	}
-
+	$scope.delete = function(index){
+		var del = confirm('Delete movie?');
+		if(del){
+			$scope.movie.details.splice(index, 1);
+			console.log($scope.movie.details[index]);
+			$scope.greeting = "";
+		}
+	}
+	$scope.add = function(){
+		$scope.movie.details = [{
+			"name" : document.getElementById("txtName").value,
+			"actor1" : document.getElementById("txtActor1").value,
+			"actor2" : document.getElementById("txtActor2").value,
+			"actor3" : document.getElementById("txtActor3").value,
+			"premiere" : document.getElementById("txtPremiere").value
+		}];
+		$scope.movie.details[5].push(movie.details);
+	}
 }]);
 /*
 	moviesApp.directive('dir', function(){
