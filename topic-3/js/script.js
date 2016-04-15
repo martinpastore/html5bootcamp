@@ -77,21 +77,3 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 		$scope.movie.details[index].push($scope.movie.details);
 	}
 }]);
-/*
-	moviesApp.directive('dir', function(){
-	return{
-			restric: 'E',
-			template: '<li ng-repeat="mov in movie.details">'+
-					   '{{ mov.actor1 }} <br/>'+
-			           '{{ mov.actor2 }} <br/>'+
-			           '{{ mov.actor3 }} <br/>'+
-			           '{{ mov.premiere }} <br/>'+
-			       	   '</li>',
-			controller: ['$scope', function($scope){
-				$('#show').click(function(index){
-					scope.movie.details = $scope.movie.details[index]
-				});
-			}],       	     
-		};
-});			
-*/
