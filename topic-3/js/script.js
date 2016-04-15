@@ -54,8 +54,13 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 			"actor3" : document.getElementById("txtActor3").value,
 			"premiere" : document.getElementById("txtPremiere").value
 		}];
-		$scope.movie.details[5].push(movie.details);
+		for (var i = 0; i < $scope.movie.details.length; i++) {
+			if($scope.movie.details[i] == null){
+				$scope.movie.details.push($scope.movie.details);
+			}
+		};	
 	}
+
 }]);
 /*
 	moviesApp.directive('dir', function(){
