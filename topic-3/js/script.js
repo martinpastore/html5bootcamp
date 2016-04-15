@@ -62,8 +62,7 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 			if($scope.movie.details[i] == null){
 				$scope.movie.details.push($scope.movie.details);
 			}
-		};	
-		console.log($scope.movie.details);
+		};
 	}
 
 	$scope.edit = function(index){
