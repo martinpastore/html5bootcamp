@@ -70,4 +70,6 @@ moviesApp.controller('MoviesCtrl', ['$scope', function($scope){
 			$scope.greeting = "";
 		}
 	}
+
+
 }]);
