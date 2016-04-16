@@ -15,11 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      '<ul class="contain">',
-      '<li class="param">',
-      '{{greeting}}',
-      '</li>',
-      'C:\Users\FEDE\html5bootcamp\topic-3\js\script.js'
+      'bower_components/angular/angular.js',
+      'bower_components/angular-mocks/angular-mocks.js',
+      'js/*.js',
+      'test/*.js'
     ],
 
 
