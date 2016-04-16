@@ -9,6 +9,7 @@ ul{
 }
 .navigator{
 	float:left;
+	margin-top: 30px;
 }
 .mov{
 	font-size: 20px;
@@ -40,4 +41,14 @@ li{
 .param{
 	float: right;
 	font-family: arial black;
+}
+.frm{
+	float:right;
+	margin-top:0px;
+}
+.movs{
+	margin-top: 0px;
+}
+.contain{
+	margin:0;
 }
