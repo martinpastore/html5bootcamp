@@ -39,12 +39,11 @@ li{
 	visibility: hidden;
 }
 .param{
-	float: right;
 	font-family: arial black;
 }
 .frm{
 	float:right;
-	margin-top:0px;
+	margin-right:30px;
 }
 .movs{
 	margin-top: 0px;
@@ -52,3 +51,4 @@ li{
 .contain{
 	margin:0;
 }
+
