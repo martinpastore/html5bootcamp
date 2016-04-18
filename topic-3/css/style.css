@@ -1,5 +1,6 @@
 body{
-	background-color: gray;
+	/*background-color: gray;*/
+	border-style: solid;
 }
 ul{
 	list-style: none;
@@ -26,30 +27,44 @@ li{
 .selector{
 	text-align: center;
 	font-size: 18px;
+
 }
 .btn{
 	font-size: 14px;
 	padding: 10px;
 	text-align: center;
-	background-color: white;
+	background-color: #0B3861;
+	color:#B40431;
 	margin-top: 10px;
 	border-style:none;
+	font-family: 'ka1';
 }
 .textClass{
 	visibility: hidden;
 }
 .param{
-	font-family: arial black;
+	font-family: 'ka1';
 }
 .frm{
 	float:right;
 	margin-right:30px;
 	font-family: arial black;
+	font-family: 'ka1';
 }
 .movs{
 	margin-top: 0px;
 }
 .contain{
-	margin:0;
+	width: 900px;
 }
-
+.header{
+	font-size: 32px;
+	border-style: solid;
+	font-family: 'ka1';
+	color: #B40431;
+	background-color: #0B3861;
+}
+@font-face {
+    font-family: "ka1";
+    src: url(../fonts/ka1.ttf) format("truetype");
+}
