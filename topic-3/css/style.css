@@ -38,6 +38,7 @@ li{
 	margin-top: 10px;
 	border-style:none;
 	font-family: 'ka1';
+	border-radius: 5px;
 }
 .textClass{
 	visibility: hidden;
