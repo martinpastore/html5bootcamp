@@ -44,18 +44,19 @@ li{
 }
 .param{
 	font-family: 'ka1';
+	text-align: center;
 }
 .frm{
 	float:right;
 	margin-right:30px;
-	font-family: arial black;
 	font-family: 'ka1';
 }
 .movs{
-	margin-top: 0px;
+	margin:0;
 }
 .contain{
 	width: 900px;
+	margin-right:0px;
 }
 .header{
 	font-size: 32px;
