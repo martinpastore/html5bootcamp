@@ -86,3 +86,8 @@ li{
     font-family: "ka1";
     src: url(../fonts/ka1.ttf) format("truetype");
 }
+.txt{
+	border-radius: 5px;
+	box-shadow:-3px -3px 3px #000;
+	border-style:none;
+}
