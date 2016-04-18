@@ -30,6 +30,19 @@ li{
 
 }
 .btn{
+	width: 200px;
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+	background-color: #0B3861;
+	color:#B40431;
+	margin-top: 10px;
+	border-style:none;
+	font-family: 'ka1';
+	border-radius: 5px;
+}
+.btnSmall{
+	width: 90px;
 	font-size: 14px;
 	padding: 10px;
 	text-align: center;
@@ -49,6 +62,7 @@ li{
 }
 .frm{
 	float:right;
+	margin-top: 0px;
 	margin-right:30px;
 	font-family: 'ka1';
 }

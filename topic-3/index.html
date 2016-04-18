@@ -15,8 +15,8 @@
         <ul class="lMov">
         <li ng-repeat="mov in movie.details track by $index">
           <input type="button" value="{{ mov.name }}" ng-click="show($index)" class="btn">
-          <input type="button" value="Delete" ng-click="delete($index)" class="btn">
-          <input type="button" value="Edit" ng-click="edit($index)" class="btn">
+          <input type="button" value="Delete" ng-click="delete($index)" class="btnSmall">
+          <input type="button" value="Edit" ng-click="edit($index)" class="btnSmall">
         </li>
         </ul>
     </nav>
@@ -34,7 +34,7 @@
     <p>Actor 2:</p> <input type="text" id="txtActor2"></br>
     <p>Actor 3:</p> <input type="text" id="txtActor3"></br>
     <p>Premiere:</p> <input type="text" id="txtPremiere"></br>
-    <input type="button" id="btnAdd" value="Add" class="btn" ng-click="add()">
+    <input type="button" id="btnAdd" value="Add" class="btnSmall" ng-click="add()">
 </div>
     </div>
 
