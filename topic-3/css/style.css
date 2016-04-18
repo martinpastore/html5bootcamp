@@ -40,6 +40,7 @@ li{
 	border-style:none;
 	font-family: 'ka1';
 	border-radius: 5px;
+	box-shadow: -5px -5px 3px #000;
 }
 .btnSmall{
 	width: 90px;
@@ -52,6 +53,7 @@ li{
 	border-style:none;
 	font-family: 'ka1';
 	border-radius: 5px;
+	box-shadow:-5px -5px 3px #000;
 }
 .textClass{
 	visibility: hidden;
